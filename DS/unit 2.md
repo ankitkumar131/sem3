@@ -146,10 +146,10 @@ flowchart LR
 
 ```mermaid
 erDiagram
-    DIM_TIME ||--o{ FACT_SALES : ""
-    DIM_PRODUCT ||--o{ FACT_SALES : ""
-    DIM_STORE ||--o{ FACT_SALES : ""
-    DIM_CUSTOMER ||--o{ FACT_SALES : ""
+    DIM_TIME ||--o{ FACT_SALES : "sold in"
+    DIM_PRODUCT ||--o{ FACT_SALES : "sold in"
+    DIM_STORE ||--o{ FACT_SALES : "sold in"
+    DIM_CUSTOMER ||--o{ FACT_SALES : "sold in"
     FACT_SALES {
         int time_id
         int product_id

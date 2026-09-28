@@ -258,7 +258,9 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    X["XML document"] + S["XSLT stylesheet"] --> P["XSLT Processor"] --> H["HTML / XML / Text output"]
+    X["XML document"] --> P["XSLT Processor"]
+    S["XSLT stylesheet"] --> P
+    P --> H["HTML / XML / Text output"]
 ```
 
 ---

@@ -54,10 +54,10 @@ erDiagram
 
 ```mermaid
 erDiagram
-    DIM_CATEGORY ||--o{ DIM_PRODUCT : ""
-    DIM_PRODUCT ||--o{ FACT_SALES : ""
-    DIM_TIME ||--o{ FACT_SALES : ""
-    DIM_STORE ||--o{ FACT_SALES : ""
+    DIM_CATEGORY ||--o{ DIM_PRODUCT : "belongs to"
+    DIM_PRODUCT ||--o{ FACT_SALES : "sold in"
+    DIM_TIME ||--o{ FACT_SALES : "sold in"
+    DIM_STORE ||--o{ FACT_SALES : "sold in"
 ```
 
 ### 2.3 Star vs Snowflake
