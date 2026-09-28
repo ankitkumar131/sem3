@@ -144,7 +144,7 @@ flowchart LR
   - Generate **ETL/cleaning code** from natural language ("standardize these date columns")
   - Infer **schema mappings** between heterogeneous sources; suggest joins
   - Auto-classify sensitive data (PII tagging) & produce documentation/metadata
-  - Modern tools: **Power Query AI, Tableau Prep ( recommendations), dbt Copilot, Trifacta/Paxata ML suggestions**
+  - Modern tools: **Power Query AI, Tableau Prep, dbt Copilot, Trifacta/Paxata ML suggestions**
 - **Benefits:** faster prep (the 60–70% bottleneck), fewer human errors, self-service for non-coders. **Caution:** verify AI-generated logic — silent wrong transformations are dangerous.
 
 ```mermaid

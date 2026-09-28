@@ -187,12 +187,12 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    X["XML Document"] --> PD["Prolog / Declaration<br/>(<?xml version...?>)"]
+    X["XML Document"] --> PD["Prolog / Declaration<br/>(xml version line at top)"]
     X --> RO["ROOT element<br/>(exactly one)"]
-    X --> EL["ELEMENTS<br/>(<name>...</name>)"]
-    X --> AT["ATTRIBUTES<br/>(inside start tag: id="101")"]
+    X --> EL["ELEMENTS<br/>(user-defined tags, properly nested)"]
+    X --> AT["ATTRIBUTES<br/>(inside start tag, e.g. id=101)"]
     X --> TX["Text / CDATA content"]
-    X --> CO["Comments <!-- -->"]
+    X --> CO["Comments"]
 ```
 
 - **Element vs Attribute:** element = data container (can nest); attribute = metadata about an element (no nesting). Rule of thumb: data → elements, metadata → attributes.

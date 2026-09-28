@@ -74,7 +74,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    ORD["ORDINAL / snapshot table<br/>UPDATE overwrites → history lost"] vs["vs"] TMP["TEMPORAL TABLE<br/>every change stored with<br/>validity period & timestamps"]
+    ORD["ORDINARY snapshot table<br/>UPDATE overwrites → history lost"] -->|"vs"| TMP["TEMPORAL TABLE<br/>every change stored with<br/>validity period and timestamps"]
 ```
 
 ## 4. Valid Time, Transaction Time & Timestamps

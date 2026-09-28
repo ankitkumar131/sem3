@@ -113,8 +113,8 @@ flowchart TD
 ```mermaid
 flowchart LR
     subgraph SVM["Max-margin classifier"]
-        O1["o o o<br/>Class A<br/>(support vector ●)"] --- H["|<br/>hyperplane<br/>|"]
-        H --- O2["x x x<br/>Class B<br/>(support vector ●)"]
+        O1["Class A points (o)<br/>nearest points = support vectors"] --- H["MAX-MARGIN<br/>HYPERPLANE"]
+        H --- O2["Class B points (x)<br/>nearest points = support vectors"]
     end
 ```
 
